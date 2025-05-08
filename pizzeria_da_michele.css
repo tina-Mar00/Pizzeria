@@ -1,0 +1,206 @@
+
+.fronte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: darkred;
+}
+
+
+.title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    gap: 60px;
+    list-style-type: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+a{
+    
+    color: white;
+    margin-top: 60px;
+}
+
+h2 {
+    color: darkred;
+}
+
+body {
+    background-color: rgb(251, 253, 218);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 200px;
+    
+
+}
+
+.container {
+    gap: 1 rem;
+    display: flex;
+    margin-bottom: 5rem; /* Spazio tra container e bottone */
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.inizio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.box{
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+}
+
+.button{
+    width: 150px;
+    height: 65px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column; /* mette i figli uno sopra l'altro */
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.tasto {
+    width: 150px;
+    height: 65px;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.tasto:hover {
+    background-color: darkred;
+}
+
+#output p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.output-menu {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    text-align: center;
+    display: block;
+    width: auto; /* o 100% se preferisci */
+    text-align: center;
+}
+
+.output-menu.active {
+    opacity: 1;
+    max-height: 500px; /* o quanto basta per mostrare tutto il contenuto */
+}
+
+@media (min-width: 601px) {
+    .button {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .fronte{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        display: none;
+    }
+    .section {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .inizio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .box{
+        width: 250px;
+        height: 250px;
+        border: 10px;
+        gap: 1rem;
+        
+        max-width: 400px
+    }
+
+    .button{
+        width: 150px;
+        height: 65px;
+        background-color: darkred;
+        border-radius: 50px;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    
+}
+
